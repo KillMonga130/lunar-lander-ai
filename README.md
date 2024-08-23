@@ -20,16 +20,6 @@ This repository contains an implementation of a Deep Q-Network (DQN) to solve th
 
 The Lunar Lander environment is a well-known problem in reinforcement learning where an agent must learn to control a lander to safely touch down on the surface of the moon. This project utilizes a Deep Q-Network (DQN) to train the agent, leveraging PyTorch for the neural network implementation and Gymnasium (a fork of OpenAI Gym) for the simulation environment.
 
-## Project Structure
-
-The repository is structured as follows:
-
-lunar-lander-ai/
-│
-├── Lunar_Landing.ipynb # The main Jupyter Notebook containing the code.
-├── README.md # This README file.
-├── lunar_landing_demo.mp4 # Video demo of the trained agent.
-
 
 ## Using Google Colab
 
@@ -101,9 +91,10 @@ class Network(nn.Module):
     x = self.fc2(x)
     x = F.relu(x)
     return self.fc3(x)
-```markdown
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------
-####
 Training Process
 The training process is as follows:
 
